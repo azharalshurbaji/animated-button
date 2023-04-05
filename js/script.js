@@ -5,6 +5,7 @@
     const submitBtn = document.getElementById('submit-btn')
     const form = document.getElementById('emptyForm')
 
+            // Email Validation
     function validateEmail()
     {
         const emailError = document.getElementById('email-error')
@@ -22,7 +23,7 @@
         emailInput.style.borderColor = "";
         return true;
     }
-
+            // When Submitted
     form.addEventListener("submit" , function(button) {
         // button.preventDefault()
 
@@ -37,12 +38,14 @@
             button.target.classList.toggle("stop");
             document.getElementById('submit-btn').style.cursor = 'pointer';
         }
-
+        
+            // Dump form input
         fullNameInput.value = "";
         emailInput.value = "";
         passwordInput.value = "";
     })
 
+            // when Mouse Hover 
     submitBtn.addEventListener("mouseover" , (button) =>{
         let fullName = fullNameInput.value; 
         let email = emailInput.value; 
@@ -55,25 +58,18 @@
             button.target.classList.toggle("stop");
             document.getElementById('submit-btn').style.cursor = 'pointer';
             document.getElementById('submit-btn').style.transition = '.5s';
-            
         }
     })
-
     
     // ~  /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+?\.)+([a-zA-Z0-9]{2,4})+$/ ---> this is validation for Email with regular expression
     
     // ? .test() will get either true or false
-    
-    
-    // let x = [1,2,3,5]
-    // x.forEach((e) =>{ if(e >2 && e<5) return; 
-    //     console.log(e);
-    // })
-
-
 
     // && /[a-zA-Z0-9]{8}/.test(password)
 
+
+
+            // This code is not working properly 
 // var a = 0;
 //     function mouseOver()
 //     {
