@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button moving animation form validation</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <div class="container-background">
+        <div class="sky">
+            <div class="stars-img"></div>
+            <div class="moon"></div>
+        </div>
+        <img src="img/wave-1.svg" class="svg-img" alt="svg-1">
+    </div>
+    
+    <div class="container-wrapper">
+        <div class="signup-box">
+            <div class="reflacted">
+                <h1 class="title-form">Create Account</h1>
+                <h1 class="title-form">Create Account</h1>
+            </div>
+            <form method="get" action="submitted.html" name="suForm" id="emptyForm">
+                <input type="text" class="input" placeholder="Full name" id="fullName" maxlength="30" required>
+
+                <input type="email" class="input" placeholder="Email" id="email" onkeyup="validateEmail()" required>
+                <!-- onkeyup="validateEmail()" -->
+                <span id="email-error"></span>
+
+                <div class="show-password-field">
+                    <!-- <label for="show-password" class="label-show-password">Show Password</label> -->
+                    <input type="checkbox" name="show-password" id="show-password" class="show-password" tabindex="3">
+                    
+                    <input type="text" autocomplete="off" class="input" placeholder="Password" id="password" name="password" required>
+                </div>
+
+                <input type="submit" value="Sign up" id="submit-btn">
+            </form>
+        </div>
+    </div>
+
+    <!-- onmouseover="mouseOver()" -->
+    <!-- <input type="checkbox" name="checkbox" id="checkbox"> -->
+    <!-- onclick="resetBtn()" -->
+    <!-- <label for="checkbox" class="label">I agree with the Terms policies.</label> -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
